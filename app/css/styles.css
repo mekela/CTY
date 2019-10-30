@@ -674,7 +674,7 @@ textarea {
   .book__slider {
     position: relative;
     z-index: 2;
-    width: calc(100% + 400px);
+    width: 100%;
     margin-bottom: -7px; }
     @media only screen and (max-width: 1500px) {
       .book__slider {
