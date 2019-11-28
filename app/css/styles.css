@@ -236,7 +236,7 @@ h6 {
   font-size: 14px; }
 
 .button {
-  background: #c4a460;
+  background: #1b527c;
   border-radius: 0px;
   font-family: "Lato", sans-serif;
   color: #ffffff;
@@ -246,18 +246,18 @@ h6 {
   border: none;
   display: inline-block;
   -webkit-appearance: none;
-  border: 1px solid #c4a460;
+  border: 1px solid #1b527c;
   font-size: 16px;
   font-weight: 500;
   letter-spacing: 0.4px;
   text-transform: uppercase; }
   .button.button-empty {
     background: none;
-    color: #c4a460; }
+    color: #1b527c; }
     .button.button-empty:hover {
       color: #fff; }
   .button:hover {
-    background: #d9b361; }
+    background: #3086c7; }
 
 input[type=text], input[type=email], input[type=tel], input[type=search], input[type=password], input[type=date], input[type=url], textarea {
   width: 300px;
@@ -365,9 +365,9 @@ textarea {
 /*----------header----------*/
 .header {
   position: relative;
-  overflow: hidden;
   padding: 0;
-  background: #fff; }
+  background: #fff;
+  height: 105px; }
   .header__top {
     background: #f6f6f6;
     padding: 12px 0; }
@@ -386,12 +386,17 @@ textarea {
   .header__center {
     padding: 18px 0; }
 
+.logo {
+  position: relative;
+  z-index: 10; }
+
 .nav {
   display: flex;
   justify-content: space-between;
   color: #2a2a2a;
   font-size: 16px;
-  font-weight: 300; }
+  font-weight: 300;
+  padding-top: 20px; }
   @media only screen and (max-width: 992px) {
     .nav {
       position: fixed;
@@ -449,19 +454,37 @@ textarea {
       .nav .nav__lang li {
         display: inline-block;
         border: none; } }
+  .nav__trigger {
+    padding-top: 20px; }
   .nav__trigger, .nav__close {
     text-align: right;
     display: none; }
     .nav__trigger button, .nav__close button {
       background: none;
       border: none;
-      color: #c4a460;
+      color: #1b527c;
       font-size: 2rem; }
     @media only screen and (max-width: 992px) {
       .nav__trigger, .nav__close {
         display: block; } }
   .nav__close {
     padding: 15px; }
+  .nav__open button {
+    border: none;
+    background: none;
+    padding: 0;
+    font-size: 20px;
+    color: #00368c;
+    text-transform: uppercase; }
+    .nav__open button span {
+      display: none; }
+      @media only screen and (max-width: 992px) {
+        .nav__open button span {
+          display: block;
+          padding: 15px; } }
+    @media only screen and (max-width: 992px) {
+      .nav__open button i {
+        display: none; } }
 
 /*----------end-header----------*/
 /*----------main----------*/
@@ -600,7 +623,6 @@ textarea {
 
 .top-text {
   padding-top: 90px;
-  border-bottom: 1px solid #ccc1c3;
   color: #5a5a5a;
   font-size: 18px;
   font-weight: 300;
@@ -630,7 +652,7 @@ textarea {
     display: block;
     width: 40px;
     height: 3px;
-    background-color: #dcb72b;
+    background-color: #1b527c;
     margin-top: 20px;
     margin-bottom: 25px; }
   .title.text_center:after {
@@ -749,7 +771,7 @@ textarea {
 .footer {
   position: relative;
   overflow: hidden;
-  background: #2a2516;
+  background: #1b527c;
   padding: 45px 0 75px 0; }
   @media only screen and (max-width: 767px) {
     .footer {
@@ -772,7 +794,7 @@ textarea {
         padding-bottom: 30px; } }
   .footer__social {
     color: #fff;
-    font-size: 1.3em; }
+    font-size: 40px; }
     .footer__social a {
       padding-right: 15px; }
   .footer address {
@@ -792,6 +814,39 @@ textarea {
 /*----------end footer----------*/
 .datepicker td, .datepicker th {
   vertical-align: middle; }
+
+.hotels-side {
+  position: fixed;
+  right: -235px;
+  top: 0;
+  opacity: 0;
+  width: 235px;
+  background: #1b527c;
+  z-index: 100;
+  height: 100vh;
+  box-sizing: border-box;
+  padding: 90px 20px 50px 20px;
+  color: #ffffff;
+  font-size: 16px;
+  text-align: center;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  transition: all 0.5s; }
+  .hotels-side__logo {
+    display: block;
+    margin-top: 30px; }
+  .hotels-side__close {
+    position: absolute;
+    top: 30px;
+    left: 20px;
+    font-size: 18px;
+    color: #fff;
+    cursor: pointer; }
+  .hotels-side.active {
+    right: 0;
+    opacity: 1; }
 
 @media only screen and (max-width: 1000px) {
   img {

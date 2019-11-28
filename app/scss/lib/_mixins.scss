@@ -16,24 +16,24 @@ overflow: hidden;
   border: none;
   display: inline-block;
   -webkit-appearance: none; 
-  border: 1px solid #c4a460;
+  border: 1px solid #1b527c;
   font-size: 16px;
   font-weight: 500;
   letter-spacing: 0.4px;
   text-transform: uppercase;
   &.button-empty{
     background: none;
-    color: #c4a460;
+    color: #1b527c;
     &:hover{
       color: #fff;
     }
   }
 }
 @mixin button_gradient($button_gradient){
-  background: #c4a460;
+  background: #1b527c;
 }
 @mixin button_gradient_hover($button_gradient_hover){
-  background: #d9b361;
+  background: #3086c7;
 }
 
 @mixin input($input){
