@@ -32,6 +32,10 @@
  	.logo{
 		 position: relative;
 		 z-index: 10;
+		 @include mq($max-width: 575px) {
+			display: block;
+			width: 100px;
+		 }
 	 }
  	.nav{
 		 display: flex;

@@ -1,0 +1,72 @@
+<!-- index.nunjucks -->
+{% extends "layout.html" %}
+
+{% block content %}
+<!-- banner -->
+<div class="bnr" style="background-image: url(img/bnr.jpg)">
+    <div class="container">
+        <div class="row align-items-center justify-content-center">
+            <div class="col-lg-10">
+                <h1>DIY check-in                </h1>
+                <p>Check yourself in, using your own smartphone</p>
+                <nav class="pager">
+                    <a href="#">Home</a>
+                    <a href="#" class="active">check-in                    </a>
+                </nav>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /banner -->
+<!-- content -->
+<div class="text-content yellow">
+    <div class="container">
+       <div class="row">
+            <div class="col-lg-6">
+                <div class="contact-item">
+                    <figure><img src="img/check-in1.png" alt=""></figure>
+                    <h3 class="title">Cell reception</h3>
+                    <p>Not so long ago, the internet made it possible to book your own hotel room, anywhere in the world. And now, your smartphone enables you to check yourself in too, right here at CTY Books. That’s why there is no reception desk at the hotel.
+                    </p>
+                    <p>
+                        <b>Check in:</b>   after 2PM. <br>
+                        <b>Check out:</b> before 11PM.
+                    </p>
+                        
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="contact-item">
+                    <figure><img src="img/check-in2.png" alt=""></figure>
+                    <h3 class="title">Personal assistance</h3>
+                    <p>Do you prefer a receptionist or require personal assistance? We have a 24-hour reception at our other hotel, 
+                        <a href="#">City Best Western.</a> It is located just 200m from Books, at Lange Mare 43. Please find a route description here.</p>
+                        
+                    <p>It’s possible to store your luggage at CTY Books outside of check-in and checkout times. 
+                        </p>
+                </div>
+            </div>
+       </div>
+    </div>
+</div>
+<div class="text-content">
+    <div class="container">
+        <div class="row text_center justify-content-center">
+            <div class="col-lg-7">
+                <article>
+                    <h3 class="title text_center">How does the self check-in work?</h3>
+                    <div class="video"><iframe width="730" height="415" src="https://www.youtube-nocookie.com/embed/Dcq9NE1XQho?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                </article>
+                <article>
+                    <h3 class="title text_center">Visiting us by car?</h3>
+                    <p>Parking in the old town of Leiden can be challenging, especially for people who are not familiar with the area. The streets are narrow, the spots are sparse and the prices are steep. Plus: after parking your car on the street, you’d still have to walk a fair bit to our hotel, which is located in a car-free zone.</p>
+
+                    <p>We recommend to park your car at the <a href="#">Haagweg parking lot</a>. It is located just outside the city centre, at <a href="#">Haagweg 8, 2312 AA, Leiden</a>. There is a free shuttle bus to drive you to the hotel. 
+                        </p>
+                </article>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /content -->
+{% endblock %}
