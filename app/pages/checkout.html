@@ -1,0 +1,114 @@
+<!-- index.nunjucks -->
+{% extends "layout.html" %}
+
+{% block content %}
+<!-- content -->
+<div class="text-content">
+    <div class="container">
+        <h2 class="title text_center">Checkout</h2>
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+                <div class="checkout-steps">
+                    <div class="checkout-steps__popup float_right">
+                        <p><b>Your Stay:</b> 12/13/2019 - 12/14/2019     <b>Guests:</b> 1 adult(s) & children <br>
+                            <b>You selected:</b> 1 rooms - The Ernest Hemingway Suite (#2)</p>
+                    </div>
+                    <div class="checkout-steps__line">
+                        <div class="checkout-steps__numb">
+                            <span>1</span>
+                        </div>
+                        <div class="checkout-steps__numb">
+                            <span>2</span>
+                        </div>
+                        <div class="checkout-steps__load"></div>
+                    </div>
+                </div>
+                <div class="checkout">
+                    <h2>Payment information</h2>
+                    <div class="checkout__section">
+                        <h3>Order Summary</h3>
+                        <div class="checkout__section-table">
+                            <table>
+                                <tr>
+                                    <td><b>Guest Name: </b>                                   </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><b>Guests: 	</b></td>
+                                    <td>1 adults & children</td>
+                                </tr>
+                                <tr>
+                                    <td><b>Your Selection: 	</b></td>
+                                    <td>1 rooms - The Ernest Hemingway</td>
+                                </tr>
+                                <tr>
+                                    <td><b>Your Stay:</b></td>
+                                    <td>12/13/2019 - 12/14/2019</td>
+                                </tr>
+                                <tr>
+                                    <td><b>Amount: 								</b></td>
+                                    <td>EUR 0.00</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="checkout__form">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="checkout__form-item">
+                                        <label>Card number*</label>
+                                        <input type="text">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="checkout__form-item">
+                                        <label>Security code*</label>
+                                        <input type="text">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="checkout__form-item">
+                                        <label>Cardholder name*</label>
+                                        <input type="text">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="checkout__form-item">
+                                        <label>Expiration date*</label>
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <select>
+                                                    <option>1</option>
+                                                    <option>1</option>
+                                                    <option>1</option>
+                                                    <option>1</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-6">
+                                                <select>
+                                                    <option>2019</option>
+                                                    <option>1</option>
+                                                    <option>1</option>
+                                                    <option>1</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="checkout__buttons">
+                        <a href="#" class="button"><i class="fas fa-chevron-left"></i>Back</a>
+                        <a href="#" class="button green">Confirm reservation <i class="fas fa-chevron-right"></i></a>
+                    </div>
+                </div>
+                <div class="checkout__bottom"></div>
+                <div class="checkout__bottom2"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /content -->
+{% endblock %}
